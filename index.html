@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Louay Bassbouss">
+    <title>DPC Test Suite</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="assets/bootstrap/starter-template.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+  <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+    <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
+      <img class="w-25 p-3" alt="CTA WAVE" src="https://webapitests2018.ctawave.org/wave/res/wavelogo_2016.jpg">
+      <span class="fs-4" >DTCTF Test Suite</span>
+    </a>
+  </header>
+
+  <main>
+    <h1>DTCTF Test Suite At A Glance</h1>
+    <p class="fs-5 col-md-8">
+        The DPCTF test suite verifies device behavior against requirements for hardware capabilities identified within the Device Playback Capabilities Task Force of the CTA WAVE project. The test suite consists of four main modules:</p>
+
+    <!-- 
+    <div class="mb-5">
+      <a href="../examples/" class="btn btn-primary btn-lg px-4">Download examples</a>
+    </div>
+    -->
+    <hr class="col-12 col-md-6 mb-5">
+
+    <div class="row g-5">
+      <div class="col-md-3">
+        <h2>Mezzanine Content</h2>
+        <p>This repo contains scripts that will build annotated test content from specific source content, compatible with the WAVE device playback test suite</p>
+        <ul class="icon-list">
+          <li><a href="https://github.com/cta-wave/mezzanine" rel="noopener" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h2>Test Content</h2>
+        <p>Offers Test Content generated from the Mezzanine Content in different codecs and variations</p>
+        <ul class="icon-list">
+          <li><a href="https://github.com/cta-wave/Test-Content" rel="noopener" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h2>Test Runner</h2>
+        <p>The DPCTF Test Runner offers an automated execution environment for Tests following the DPCTF Test Specification. It uses the Test Content above.</p>
+        <ul class="icon-list">
+          <li><a href="https://github.com/cta-wave/dpctf-deploy" rel="noopener" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h2>Observation Framework</h2>
+        <p>The DPCTF Device Observation Framework determines pass or fail results, based on observations taken of tests which are run on a device by the DPCTF Test Runner</p>
+        <ul class="icon-list">
+          <li><a href="https://github.com/cta-wave/device-observation-framework" rel="noopener" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="col-12 col-md-12 mb-5">
+
+    <h2>High Level Requirements</h2>
+    <ul class="icon-list">
+        <li>PC with Docker to setup the Test Runner and Observation Framework (Linux is preferred for production, but Windows and macOS are supported as well)</li>
+        <li>Device under Test (DUT): Desktop, TV or Mobile</li>
+        <li>Camera for recording the screen of the DUT</li>
+    </ul>
+    <p>For more details please follow the instructions in the&nbsp;<a href="https://github.com/cta-wave/device-observation-framework" rel="noopener" target="_blank">Test Runner</a> and&nbsp;<a href="https://github.com/cta-wave/device-observation-framework" rel="noopener" target="_blank">Observation Framework</a> respositories</p>
+
+    <hr class="col-12 col-md-12 mb-5">
+
+    <h2>How Can I use the DPCTF Test Suite?</h2>
+    <p>You only need to setup the Test Runner and the Observation Framework. The Test Runner offers a script to download the Test Content locally.</p>
+    <ul class="icon-list">
+        <li>Setup Test Runner: Follow instructions in the&nbsp;<a href="https://github.com/cta-wave/dpctf-deploy#dpctf-test-runner-docker-image" rel="noopener" target="_blank"> DPCTF Test Runner on GitHub</a></li>
+        <li>Setup Observation Framework: Follow instructions in the&nbsp;<a href="https://github.com/cta-wave/device-observation-framework" rel="noopener" target="_blank">Observation Framework on GitHub</a></li>
+      </ul>
+    
+  </main>
+  <footer class="pt-5 my-5 text-muted border-top">
+    ??? &middot; &copy; 2021
+  </footer>
+</div>
+      
+  </body>
+</html>
